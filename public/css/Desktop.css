@@ -1,0 +1,273 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Playfair Display', serif;
+    color: #00B5A9;
+    min-height: 100vh;
+
+}
+
+/* navbar */
+#menu {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.logo img {
+    width: 149px;
+}
+
+#menuitems {
+    align-self: center;
+    padding-right: 30px;
+
+}
+
+#menuitems li {
+    display: inline-block;
+    padding: 18px;
+    font-size: 26px;
+}
+
+#menuitems li a {
+    color: #00B5A9;
+    text-decoration: none;
+
+}
+
+/* index */
+#background {
+    margin: 60px 20px;
+    display: flex;
+    justify-content: space-around;
+    font-size: 24px;
+}
+
+.selected a {
+    position: relative;
+
+}
+
+.selected a::after {
+    content: '';
+    position: absolute;
+    height: 4px;
+    width: 100%;
+    bottom: 0px;
+    left: 0;
+    border-radius: 10px;
+    background-color: #00B5A9;
+}
+
+
+#background img {
+    height: 356px;
+}
+
+.insights {
+    align-self: center;
+}
+
+.buttons {
+    width: 108px;
+    height: 46px;
+    border-radius: 15px;
+    border: none;
+    background: linear-gradient(84deg, #007C89 5.72%, #00B5A9 98.72%);
+    margin: 20px 20px 20px 20px;
+    color: white;
+}
+
+/* aboutme */
+#about h1 {
+    text-align: center;
+    margin: 60px 0;
+}
+
+#description {
+    display: flex;
+    gap: 60px;
+    margin: 0 40px;
+}
+
+#description img {
+    height: 289px;
+}
+
+#description>div {
+    align-self: center;
+    text-align: justify;
+}
+
+#skills {
+    margin: 0 30px 30px 30px;
+}
+
+#skills h1 {
+    text-align: center;
+    margin: 60px 0;
+}
+
+.skillset {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    font-weight: 700;
+    color: #007C89;
+}
+
+.skillset>div>p {
+    text-align: center;
+}
+
+.projects {
+    margin: 60px 0;
+}
+
+.projectsection {
+    display: flex;
+    justify-content: space-between;
+}
+a{
+    text-decoration: none;
+}
+.projectcard {
+    width: 290px;
+    height: 463px;
+    border-radius: 10.793px;
+    background: linear-gradient(188deg, #00B5A9 6.12%, #017D8A 74.79%);
+    box-shadow: 0px 2.15851px 2.15851px 0px #017D8A;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 20px;
+    
+
+}
+
+#skills>a {
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+}
+
+.button1 {
+    height: 52px;
+    width: 144px;
+}
+
+/* services */
+#services h1 {
+    margin: 60px 0;
+    text-align: center;
+}
+
+.servicetab {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+    margin: 60px 30px;
+}
+
+.service {
+    color: white;
+    min-height: 247px;
+    text-align: center;
+    padding: 20px;
+    border-radius: 10.793px;
+    background: linear-gradient(188deg, #00B5A9 6.12%, #017D8A 74.79%);
+    box-shadow: 0px 2.15851px 2.15851px 0px #017D8A;
+    font-size: 14px;
+}
+
+.service h2 {
+    margin: 20px 0;
+}
+
+
+/* contact */
+#contact {
+    display: flex;
+    margin-top: 30px;
+    padding-top: 20px;
+}
+
+.socialmediacontact a {
+    color: #00B5A9;
+    text-decoration: none;
+    align-self: center;
+}
+
+.socialmediacontact>a {
+    position: relative;
+    margin-left: 9px;
+}
+
+.socialmediacontact>a>span {
+    position: absolute;
+    bottom: 10px;
+    margin-left: 10px;
+}
+
+.socialmediacontact {
+    flex-basis: 35%;
+}
+
+.socialmediacontact h3 {
+    margin: 30px;
+}
+
+.social-icons img {
+    margin: 14px;
+    height: 25px;
+}
+
+.social-icons a {
+    text-decoration: none;
+}
+
+
+.form {
+    flex-basis: 60%;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    border: 0;
+    outline: none;
+    padding: 15px;
+    margin: 15px 0;
+    caret-color: #00B5A9;
+    color: #017D8A;
+    font-size: 18px;
+    border-radius: 6px;
+    box-shadow: 2px 2px 10px #00B5A9;
+}
+
+
+
+
+/* footer */
+footer {
+    background: url("../images/wave.svg");
+    background-size: cover;
+    height: 200px;
+    position: relative;
+    bottom: -10px;
+    left: 0;
+    right: 0;
+    overflow: hidden;
+
+}
+
+/* 
+@media(prefers-color-scheme:dark){
+    body{background-color: rgb(59 58 58);
+}} */
